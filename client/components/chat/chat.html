@@ -1,0 +1,13 @@
+
+<h1>Chat</h1>
+
+<ul class="messages">
+
+  <li ng-repeat="message in messages track by $index">
+   {{message.text}}
+  </li>
+
+    <form>
+      <input id="m" ng-model="input" autocomplete="off" /><button ng-click="sendMessage()">Send</button>
+    </form>
+</ul>

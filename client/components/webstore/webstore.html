@@ -1,0 +1,28 @@
+{{products}}
+
+
+<table>
+  <h1>Products</h1>
+  <thead>
+    <tr>
+      <th>Balance</th>
+      <th>Description</th>
+      <th>Name</th>
+      <th>Amount</th>
+      <th>Company</th>
+      <th>Buy now</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr ng-repeat="product in products">
+      <td>{{product.balance}}</td>
+      <td>{{product.description}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.amount}}</td>
+      <td>{{product.company}}</td>
+      <td><i class="fa fa-plus-square" aria-hidden="true"></i> add to basket</td>
+    </tr>
+  </tbody>
+
+</table>
